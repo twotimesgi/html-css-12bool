@@ -1,18 +1,7 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 .row{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background: red;
-}
-
-[class*="col-"]{
-    height: 100px;
-    border: 2px white solid;
 }
 
 .lg-col-1{

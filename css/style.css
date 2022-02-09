@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+[class*="col-"]{
+    height: 60px;
+    border: 1px white solid;
+    text-align: center;
+    color: white;
+    line-height: 60px;
+    background: rgb(42, 134, 255);
+}
+
+.margin-b-20{
+    margin-bottom: 20px;
+}
