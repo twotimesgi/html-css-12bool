@@ -45,24 +45,106 @@
 
 .canvas:hover{
     animation: flash 0.4s linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 5;
+    position: relative;
 } 
  
+.star{
+    background-color: gold;
+    position: absolute;
+    width: calc(800px / 12);
+    height: calc(800px / 12);
+    display: none;
+}
+.star1{
+    top: 50%;
+    left: 50%;
+}
 
-.canvas:active{
-    transform: scale(10) translate(-50%,-50%);
-    transform-origin: center center;
-    animation-play-state: 0%;
+.star2{
+    top: 50%;
+    left: 50%;
+}
+
+.star3{
+    top: 50%;
+    left: 50%;
+}
+.canvas:active .star1{
+    display: block;
+    animation: star1 0.5s linear;
 } 
- 
+.canvas:active .star2{
+    display: block;
+    animation: star1 0.5s linear;
+} 
+.canvas:active .star3{
+    display: block;
+    animation: star1 0.5s linear;
+} 
+@keyframes star3 {
+    0%{
+        transform: scale(0);
+        top: 50%;
+        left: 50%;
+    }
+    50%{
+        transform: scale(1.5);
+        top: 40%;
+        left: 60%;
+    }
+    100%{
+        transform: scale(0);
+        top: 35%;
+        left: 70%;
+    }
+}
+
+@keyframes star2 {
+    0%{
+        transform: scale(0);
+        top: 50%;
+        left: 50%;
+    }
+    50%{
+        transform: scale(1.5);
+        top: 40%;
+        left: 60%;
+    }
+    100%{
+        transform: scale(0);
+        top: 35%;
+        left: 70%;
+    }
+}
+
+
+@keyframes star1 {
+    0%{
+        transform: scale(0);
+        top: 50%;
+        left: 50%;
+    }
+    50%{
+        transform: scale(1.5);
+        top: 40%;
+        left: 60%;
+    }
+    100%{
+        transform: scale(0);
+        top: 35%;
+        left: 70%;
+    }
+}
+
 @keyframes shake {
     0%{
         transform: translate(-50%,-50%) translateX(-10px) rotate(1deg); 
-        transform-origin: bottom;
+        transform-origin: 400px 800px;
     }
     100%{
         transform: translate(-50%,-50%) translateX(10px) rotate(-1deg);
-        transform-origin: bottom;
+        transform-origin: 400px 800px;
     }
 }
 
