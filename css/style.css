@@ -16,15 +16,13 @@
 
 [class*="col-"] [class*="col-"]{
     border: 1px solid rgb(42,134,255);
+    background: rgb(0, 190, 73);
 }
 
 .padding-10{
     padding: 10px; 
 }
 
-[class*="col-"] [class*="col-"]{
-    background: rgb(0, 190, 73);
-}
 .margin-b-20{
     margin-bottom: 20px;
 }
