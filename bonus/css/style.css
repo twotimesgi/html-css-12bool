@@ -18,7 +18,13 @@
     width: 800px;
     background-color: white;
     box-sizing: initial;
-    transition: transform 10s linear;
+    transition: transform 5s linear;
+    animation: shake 0.2s linear;
+    animation-iteration-count: infinite;
+    transition-delay: 1s;
+    opacity: 1;
+    animation-delay: 2s;
+    transform-origin: center;
 }
 
 .row{
@@ -38,5 +44,32 @@
 }
 
 .canvas:hover{
-    transform: translate(-50%,-50%) scale(1000%);
+    animation: flash 0.4s linear;
+    animation-iteration-count: infinite;
 } 
+ 
+
+.canvas:active{
+    transform: scale(10) translate(-50%,-50%);
+    transform-origin: center center;
+    animation-play-state: 0%;
+} 
+ 
+@keyframes shake {
+    0%{
+        transform: translate(-50%,-50%) translateX(-10px) rotate(1deg); 
+        transform-origin: bottom;
+    }
+    100%{
+        transform: translate(-50%,-50%) translateX(10px) rotate(-1deg);
+        transform-origin: bottom;
+    }
+}
+
+@keyframes flash {
+    0%{
+        opacity: 1;    }
+    100%{
+        opacity: 0;
+    }
+}
