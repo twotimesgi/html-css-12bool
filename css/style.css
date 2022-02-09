@@ -6,11 +6,11 @@
 
 
 [class*="col-"]{
-    height: 60px;
+    height: 40px;
     border: 1px white solid;
     text-align: center;
     color: white;
-    line-height: 60px;
+    line-height: 40px;
     background: rgb(42, 134, 255);
 }
 
