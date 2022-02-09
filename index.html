@@ -10,48 +10,58 @@
 </head>
 <body>
     <h2>Esercizio per casa</h2>
+    <!--- Inizio parte responsive --->
     <div class="row">
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-1">1 col</div>
     </div>
     <div class="row">
-        <div class="lg-col-2">2 col</div>
-        <div class="lg-col-5">5 col</div>
-        <div class="lg-col-5">5 col</div>
+        <div class="xs-col-12 lg-col-2">2 col</div>
+        <div class="xs-col-6 lg-col-5">5 col</div>
+        <div class="xs-col-6 lg-col-5">5 col</div>
     </div>
     <div class="row">
-        <div class="lg-col-12">12 col</div>
+        <div class="xs-col-12 lg-col-12">12 col</div>
     </div>
     <div class="row">
-        <div class="lg-col-8">8 col</div>
-        <div class="lg-col-2">2 col</div>
-        <div class="lg-col-2">2 col</div>
+        <div class="xs-col-12 lg-col-8">8 col</div>
+        <div class="xs-col-6 lg-col-2">2 col</div>
+        <div class="xs-col-6 lg-col-2">2 col</div>
     </div>
     <div class="row">
-        <div class="lg-col-1">1 col</div>
-        <div class="lg-col-2">2 col</div>
-        <div class="lg-col-2">2 col</div>
-        <div class="lg-col-6">6 col</div>
-        <div class="lg-col-1">1 col</div>
+        <div class="xs-col-12 lg-col-1">1 col</div>
+        <div class="xs-col-6 lg-col-2">2 col</div>
+        <div class="xs-col-6 lg-col-2">2 col</div>
+        <div class="xs-col-12 lg-col-6">6 col</div>
+        <div class="xs-col-12 lg-col-1">1 col</div>
     </div>
     <div class="row margin-b-20">
-        <div class="lg-col-6">
-            Nested
+        <div class="xs-col-12 lg-col-6">
+            <div class="row padding-10">
+                <div class="xs-col-6 lg-col-2">nested 2</div>
+                <div class="xs-col-6 lg-col-2">nested 2</div>
+                <div class="xs-col-12 lg-col-8">nested 8</div>
+            </div>
         </div>
-        <div class="lg-col-6">
-            Nested
+        <div class="xs-col-12 lg-col-6">
+            <div class="row padding-10">
+                <div class="xs-col-6 lg-col-6">nested 6</div>
+                <div class="xs-col-6 lg-col-6">nested 6</div>
+            </div>
         </div>
     </div>
+    <!--- Fine parte responsive --->
+
     <div class="row">
         <div class="lg-col-12"></div>
     </div>
@@ -78,6 +88,40 @@
     <div class="row margin-b-20">
         <div class="lg-col-6"></div>
         <div class="lg-col-6"></div>
+    </div>
+    <h2>Offset</h2>
+    <div class="row">
+        <div class="lg-col-1 lg-offset-11"></div> 
+    </div>
+    <div class="row">
+        <div class="lg-col-2 lg-offset-10"></div> 
+    </div>
+    <div class="row">
+        <div class="lg-col-3 lg-offset-9"></div> 
+    </div>
+    <div class="row">
+        <div class="lg-col-4 lg-offset-8"></div> 
+    </div>
+    <div class="row">
+        <div class="lg-col-5 lg-offset-7"></div> 
+    </div>
+    <div class="row">
+        <div class="lg-col-6 lg-offset-6"></div> 
+    </div>
+    <div class="row">
+        <div class="lg-col-7 lg-offset-5"></div> 
+    </div>
+    <div class="row"> 
+        <div class="lg-col-8 lg-offset-4"></div> 
+    </div>
+    <div class="row">
+        <div class="lg-col-9 lg-offset-3"></div> 
+    </div> 
+    <div class="row">
+        <div class="lg-col-10 lg-offset-2"></div> 
+    </div>
+    <div class="row">
+        <div class="lg-col-11 lg-offset-1"></div> 
     </div>
 </body>
 </html>
